@@ -50,10 +50,11 @@ const Dashboard = () => {
                         </button>
                         <button
                             onClick={lockVault}
-                            className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors"
+                            className="flex items-center gap-2 px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg transition-colors text-sm font-medium border border-slate-700"
                             title="Lock Vault"
                         >
-                            <LogOut size={20} />
+                            <Lock size={16} />
+                            <span>Lock</span>
                         </button>
                     </div>
                 </div>
