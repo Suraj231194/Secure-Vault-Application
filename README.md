@@ -45,6 +45,17 @@ The application's security model relies on the native Web Crypto API for all cry
 3.  **Storage**: The application only stores the `ciphertext`, `IV`, and `salt` in `localStorage`.
 4.  **Memory Management**: Sensitive keys and plaintext data are held in React state and are automatically cleared when the application session ends (tab closure or refresh).
 
+## Project Structure
+
+```
+src/
+├── components/     # UI Components (Dashboard, LockScreen, etc.)
+├── crypto/         # Security logic (encryption.js)
+├── hooks/          # State management & logic (useVault.jsx)
+├── utils/          # Helpers (validators, generators, etc.)
+└── App.jsx         # Main routing logic
+```
+
 ## Roadmap
 
 - **Export/Import**: Encrypted JSON export for data portability.
